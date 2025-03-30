@@ -1,0 +1,36 @@
+{
+    "info": {
+      "name": "API Operadoras",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Busca Operadoras",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:5000/api/search?q={{query}}",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["api", "search"],
+            "query": [
+              {
+                "key": "q",
+                "value": "{{query}}"
+              }
+            ]
+          }
+        },
+        "response": []
+      }
+    ],
+    "variable": [
+      {
+        "key": "query",
+        "value": "teste",
+        "description": "Termo de busca"
+      }
+    ]
+  }
